@@ -1,0 +1,12 @@
+.main-container {
+  height: 100vh;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.scroll {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}

@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+body {
+  background-color: #AC2B37;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.text-shadow {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.no-select {
+  user-select: none;
+}
+
+.maintain-aspect {
+  object-fit: contain;
+}

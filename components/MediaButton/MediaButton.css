@@ -1,0 +1,21 @@
+.media-link {
+  cursor: pointer;
+}
+
+.media-button {
+  position: relative;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.media-transition {
+  transition: transform 0.25s ease;
+}
+
+.media-transition:hover {
+  transform: scale(1.05);
+}
+
+.media-transition:active {
+  transform: scale(0.97);
+}

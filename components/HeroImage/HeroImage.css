@@ -1,0 +1,142 @@
+.mascot-container {
+  height: min(25vw, 20vh);
+  position: relative;
+  top: calc(50% - min(25vw, 20vh) / 2);
+  transform: translateY(-70vh);
+  animation: bounce 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.hero-main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+.first-fade {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 2s;
+}
+
+.hero-title {
+  color: white;
+  font-family: var(--font-kanit);
+  font-size: min(10vw, 15vh);
+  text-align: right;
+}
+
+.hero-subtitle {
+  color: #d7d7d7;
+  font-family: var(--font-kanit);
+  font-size: min(4vw, 6vh);
+  text-align: right;
+}
+
+.red-border {
+  border-bottom: 12px solid #AC2B37;
+}
+
+.scroll-down-box {
+  position: absolute;
+  bottom: 50px;
+  width: 100vw;
+  opacity: 0;
+  animation: verticalFadeIn 1.5s forwards, hover 0.75s 0.75s infinite alternate ease-out;
+  animation-delay: 3.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.scroll-down-text {
+  color: white;
+  font-family: var(--font-kanit);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.hero-title-box {
+  position: absolute;
+  top: 25px;
+  right: 60px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20);
+  animation: verticalFadeIn 1s forwards;
+  animation-delay: 3s;
+}
+
+.hero-blur {
+  backdrop-filter: blur(1px);
+}
+
+.clickable {
+  transform: scale(1);
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.clickable:hover {
+  transform: scale(1.03);
+}
+
+.clickable:active {
+  transform: scale(0.97);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-70vh);
+    opacity: 100%;
+  }
+  20% {
+    transform: translateY(5vh);
+  }
+  36% {
+    transform: translateY(-2vh);
+  }
+  52% {
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 100%;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes verticalFadeIn {
+  0% {
+    opacity: 0%;
+    transform: translateY(20);
+    visibility: visible;
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(7);
+  }
+}
