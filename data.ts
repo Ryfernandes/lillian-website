@@ -1,6 +1,7 @@
 import linked_in from "@/assets/logos/linked_in.png";
 import gmail from "@/assets/logos/gmail.png";
 import resume from "@/assets/logos/resume.png";
+import github from "@/assets/logos/github.png";
 
 import lillian_car from "@/assets/lillian/lillian_car.jpeg";
 import lillian_fish from "@/assets/lillian/lillian_fish.jpeg";
@@ -25,6 +26,11 @@ export const SOCIAL_LOGOS = [
     "src": resume,
     "alt": "Lillian's Resume",
     "link": "/Lillian's Resume.pdf",
+  },
+  {
+    "src": github,
+    "alt": "Website Github",
+    "link": "https://github.com/Ryfernandes/lillian-website",
   },
 ]
 
