@@ -24,6 +24,7 @@ const HeroImage: React.FunctionComponent<HeroImageProps> = () => {
           alt="WPI Mascot"
           fill
           className="maintain-aspect"
+          priority
         />
       </div>
 
@@ -32,6 +33,7 @@ const HeroImage: React.FunctionComponent<HeroImageProps> = () => {
         alt="WPI Campus"
         fill
         className="object-cover hero-image first-fade"
+        priority
       />
 
       <div className="absolute inset-0 bg-black/45 hero-blur first-fade red-border"></div>

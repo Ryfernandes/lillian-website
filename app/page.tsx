@@ -8,6 +8,8 @@ import HeroImage from "@/components/HeroImage";
 import IntroductionSection from "@/components/IntroductionSection";
 import CourseworkSection from "@/components/CourseworkSection";
 
+import { LILLIAN_IMAGES } from "@/data";
+
 export default function Home() {
   const [scrollState, setScrollState] = useState<string>("no-scroll");
 
@@ -15,6 +17,11 @@ export default function Home() {
     const timer = setTimeout(() => {
       setScrollState("scroll");
     }, 3500);
+
+    LILLIAN_IMAGES.forEach(img => {
+      const preload = new window.Image();
+      preload.src = img.src.src;
+    });
 
     return () => clearTimeout(timer);
   }, []);
