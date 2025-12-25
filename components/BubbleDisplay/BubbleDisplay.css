@@ -1,0 +1,38 @@
+.bubble-display-main {
+  display: flex;
+  gap: 1rem;
+}
+
+.bubble-display-text {
+  color: #AC2B37;
+  font-family: var(--font-inter);
+  font-size: 2rem;
+  font-weight: 550;
+}
+
+.bubble-display-bubble {
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 100%;
+  border: 3px solid #AC2B37;
+  transition: transform 0.25s ease,background-color 0.25s ease;
+  cursor: pointer;
+}
+
+.bubble-display-bubble:hover {
+  transform: scale(1.03);
+}
+
+.bubble-display-bubble:active {
+  transform: scale(0.97);
+}
+
+.bubble-display-indicators {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bubble-display-filled {
+  background-color: #AC2B37;
+}

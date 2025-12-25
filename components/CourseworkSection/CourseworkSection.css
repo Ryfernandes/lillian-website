@@ -1,0 +1,61 @@
+.coursework-main {
+  height: 100vh;
+  padding: 30px 40px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.coursework-top {
+  flex-shrink: 0;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.coursework-title {
+  flex-shrink: 0;
+  color: #AC2B37;
+  font-family: var(--font-inter);
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.coursework-controls {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  flex: 1;
+}
+
+.coursework-bottom {
+  flex: 1;
+  display: flex;
+  gap: 3rem;
+}
+
+.coursework-term-description {
+  flex-shrink: 0;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.coursework-term-title {
+  color: #AC2B37;
+  font-family: var(--font-inter);
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.coursework-term-text {
+  color: #AC2B37;
+  font-family: var(--font-inter);
+  font-size: 1.5rem;
+  font-weight: 400;
+}

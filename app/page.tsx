@@ -1,11 +1,12 @@
 "use client"
 
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import "./index.css";
 
 import HeroImage from "@/components/HeroImage";
 import IntroductionSection from "@/components/IntroductionSection";
+import CourseworkSection from "@/components/CourseworkSection";
 
 export default function Home() {
   const [scrollState, setScrollState] = useState<string>("no-scroll");
@@ -22,6 +23,7 @@ export default function Home() {
     <div className={`main-container ${scrollState}`}>
       <HeroImage/>
       <IntroductionSection/>
+      <CourseworkSection/>
     </div>
   );
 }
