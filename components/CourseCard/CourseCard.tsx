@@ -30,7 +30,7 @@ const CourseCard: React.FunctionComponent<CourseCardProps> = ({
           <ul>
             {bullets.map((bullet, index) => (
               <li key={index}>
-                - {bullet}
+                -{">"} {bullet}
               </li>
             ))}
           </ul>

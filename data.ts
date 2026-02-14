@@ -203,7 +203,16 @@ export const COURSES = [
     ],
     //Term 1C
     [
-
+      {
+        "title": "System's Programming",
+        "bullets": [
+          "Intro to C",
+          "Theoretical concepts like computability, complexity, and algorithm design",
+          "Logic gates and circuits",
+          "Formal representation of grammar and languages, natural language parsing",
+        ],
+        "grade": "A"
+      },
     ],
     //Term 1D
     [
@@ -221,7 +230,7 @@ export const COURSES = [
     ],
     //Term 2C
     [
-
+      
     ],
     //Term 2D
     [
