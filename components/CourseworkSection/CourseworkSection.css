@@ -6,7 +6,7 @@
   flex-direction: column;
   gap: 3.5rem;
   justify-content: space-between;
-  background-color: white;
+  background-color: rgb(246, 232, 232);
 }
 
 .coursework-top {
